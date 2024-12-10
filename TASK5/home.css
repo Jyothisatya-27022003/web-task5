@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    margin-left: 20px;
+}
+
+body {
+    display: flex;
+}
+
+.main {}
+
+.main video {
+    object-fit: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+    position: relative;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+
+}
+
+nav a:hover {
+    filter: drop-shadow(0px 0px 5px white)
+}
+
+.cname h1 {
+    -webkit-text-stroke: 1px white;
+    position: relative;
+    float: right;
+    margin-top: 340px;
+    margin-right: -20px;
+    font-size: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 15px;
+    color: transparent;
+    cursor: none;
+    filter: drop-shadow(0px 20px 10px black);
+}
+
+.imgct {
+    display: inline-block;
+    margin-top: 380px;
+    margin-left: 110px;
+}
+
+.imgct h1 {
+    border: 1px solid white;
+    width: 25%;
+    padding: 15px 1px;
+    text-transform: capitalize;
+    position: relative;
+    margin-left: 480px;
+    border-radius: 35px;
+    word-spacing: 5px;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.imgct a img {
+    margin-top: 40px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    position: relative;
+    margin-left: 20px;
+}
+
+.imgct a img:hover {
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.footer {
+    margin-top: 200px;
+    background: black;
+    border-radius: 40px 40px 0px 0px;
+    border-top: 15px groove red;
+    color: white;
+    height: auto;
+    font-size: 20px;
+    width: auto;
+    position: relative;
+}
+
+.footer h2 {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline solid red;
+
+}
+
+.footer ul li {
+    margin-left: 50px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.footer ul li a {
+    margin-left: 45px;
+}
+
+.footer ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .main video {
+        width: 100%;
+        display: flex;
+    }
+
+    .cname h1 {
+        margin: 50px;
+    }
+
+    .imgct h1 {
+        display: flex;
+        margin: 1000px;
+        margin-left: 500px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    nav a {
+        float: left;
+    }
+}
